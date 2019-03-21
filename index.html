@@ -7,31 +7,34 @@
   <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-  <title>Transportation Survey</title>
+  <title>Puzzles</title>
 </head>
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h2>Transportation Survey</h2>
+      <h2>Factorial Calculator</h2>
     </div>
-    <form id="transportation_survey" action="index.html" method="post">
-      <div class="form-group">
-        <p>In the past year, I have used the following modes of transportation to travel to work:</p>
-        <input type="checkbox" name="work-transportation" value="bike">Riding a bike.<br>
-        <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
-        <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
-        <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
-        <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
-        <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
-        <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
-        <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
-        <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare.<br>
+    <form id="factorial_calculator" action="index.html" method="post">
+      <div class="">
+        <label for="input_number">Please input a number:</label>
+        <input id="input_number" type="text" name="" value="">
       </div>
-      <button type="submit" name="button">Submit Survey</button>
+      <button type="submit" name="button">Calculate</button>
     </form>
-    <span id="work-responses">
-      <p><b>You use the following methods of transportation to travel to work or school:</b></p>
-    </span>
+    <span id="factorial_result"></span>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Palindromes</h2>
+    </div>
+    <form id="palindromes_form" action="index.html" method="post">
+      <div class="">
+        <label for="input_string">Please input a word/phrase to check:</label>
+        <input id="input_string" type="text" name="" value="">
+      </div>
+      <button type="submit" name="button">Check</button>
+    </form>
+    <span id="palindromes_result"></span>
   </div>
 </body>
 </html>
