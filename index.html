@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Transportation Survey</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Transportation Survey</h2>
+    </div>
+    <form id="transportation_survey" action="index.html" method="post">
+      <div class="form-group">
+        <p>In the past year, I have used the following modes of transportation to travel to work:</p>
+        <input type="checkbox" name="work-transportation" value="bike">Riding a bike.<br>
+        <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
+        <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
+        <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
+        <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
+        <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
+        <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
+        <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
+        <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare.<br>
+      </div>
+      <button type="submit" name="button">Submit Survey</button>
+    </form>
+    <span id="work-responses">
+      <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+    </span>
+  </div>
+</body>
+</html>
